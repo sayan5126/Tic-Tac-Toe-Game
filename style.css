@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(metal-tic-tac-toe-game-pieces.webp);
+    background-size: cover;
+}
+
+body main {
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.game_heading {
+    color: rgb(153, 209, 234);
+}
+
+.game_heading:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(165, 190, 201);
+}
+
+.game_box {
+    height: 700px;
+    width: 650px;
+    position: relative;
+    top: 70px;
+    left: 410px;
+    padding-left: 21px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.082);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.box {
+    height: 175px;
+    width: 175px;
+    border: none;
+    margin: 12px;
+    border-radius: 15px;
+    font-size: 6rem;
+    background-color: aliceblue;
+    border: 4px solid transparent;
+    color: rgb(153, 209, 234);
+    cursor: pointer;
+}
+
+.box:hover {
+    scale: 1.05;
+    border-color: rgb(165, 190, 201);
+}
+
+.game_box_1strow {
+    align-self: flex-start;
+    height: 185px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game_box_2ndrow {
+    align-self: center;
+    height: 185px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game_box_3rdrow {
+    align-self: flex-end;
+    height: 185px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn_box {
+    width: 650px;
+    height: 20px;
+    margin-top: 15px;
+}
+
+.reset_btn {
+    background-color: aliceblue;
+    color: rgb(153, 209, 234);
+    border: 2px solid transparent;
+    padding: 8px 10px 8px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.reset_btn:hover {
+    scale: 1.1;
+    border-color: rgb(165, 190, 201);
+}
+
+.new_game_btn {
+    background-color: aliceblue;
+    color: rgb(153, 209, 234);
+    border: 2px solid transparent;
+    padding: 8px 10px 8px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.new_game_btn:hover {
+    scale: 1.1;
+    border-color: rgb(165, 190, 201);
+}
+
+.hide {
+    display: none;
+}
+
+.winner_msg {
+    width: 650px;
+    text-align: center;
+}
+
+.winner_name {
+    color: rgb(153, 209, 234);
+}
